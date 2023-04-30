@@ -1,12 +1,11 @@
+import Image from "next/image";
+import logo from "./logo.svg";
+
 export default function Home() {
   return (
     <div>
       <div className="mx-auto flex justify-between mt-10 rounded-xl border-[3px] max-w-[650px] p-6 border-slate-500">
-        <div className="flex flex-col uppercase text-white leading-8 text-4xl ">
-          <span>Rock</span>
-          <span>Paper</span>
-          <span>Scissors</span>
-        </div>
+        <Image src={logo} alt="rock paper scissors" />
         <div className="bg-white rounded-lg flex flex-col items-center px-10 py-2">
           <span className="uppercase tracking-widest text-[hsl(229,64%,46%)]">
             Score
