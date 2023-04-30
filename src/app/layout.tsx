@@ -14,7 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={barlowFont.className}>{children}</body>
+      <body
+        className={`${barlowFont.className} h-screen w-screen overflow-hidden`}
+        style={{
+          background:
+            "radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%))",
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
