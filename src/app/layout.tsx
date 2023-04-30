@@ -5,6 +5,7 @@ import "./globals.css";
 const barlowFont = Barlow_Semi_Condensed({
   subsets: ["latin"],
   weight: ["600", "700"],
+  variable: "--font-barlow",
 });
 
 export const metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${barlowFont.className} h-screen w-screen overflow-hidden`}
+        className={`${barlowFont.variable} font-sans h-screen w-screen overflow-hidden`}
         style={{
           background:
             "radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%))",
